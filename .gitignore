@@ -3,9 +3,9 @@
 /server/readers/__pycache__
 /server/routes/__pycache__
 /server/services/__pycache__
-/server/test.py
 /client/node_modules
 /client/.bolt
 /server/nf_ml.pdf
 /server/nf_sh.xml
 /server/nf_shopee.pdf
+/server/test.py
