@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { uploadFiles } from '../../api/uploadFiles'
+import { uploadFiles } from '../../../api/uploadFiles'
 
 const isDragging = ref(false)
 const files = ref<File[]>([])

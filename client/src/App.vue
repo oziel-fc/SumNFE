@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import AppHeader from './components/AppHeader.vue'
-import HeroSection from './components/HeroSection.vue'
-import UploadSection from './components/UploadSection.vue'
-import HowItWorks from './components/HowItWorks.vue'
-import AboutSection from './components/AboutSection.vue'
-import AppFooter from './components/AppFooter.vue'
+import AppHeader from './components/Header/AppHeader.vue'
+import HeroSection from './components/Hero/HeroSection.vue'
+import UploadSection from './components/Upload/UploadSection.vue'
+import HowItWorks from './components/Guide/HowItWorks.vue'
+import AboutSection from './components/About/AboutSection.vue'
+import AppFooter from './components/Footer/AppFooter.vue'
 </script>
 
 <template>
