@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watchEffect } from 'vue'
 import { useFiles } from '../../../utils/useFiles'
 import { useFileSubmit } from '../../../utils/useFileSubmit'
 import DropZone from './DropZone.vue'
@@ -9,7 +9,6 @@ import AddFilesButton from './AddFilesButton.vue'
 
 const { files, addFiles, removeFile, clearFiles } = useFiles()
 const { isSubmitting, submitFiles } = useFileSubmit()
-const dropZoneRef = ref<InstanceType<typeof DropZone> | null>(null)
 
 const handleFilesAdded = (newFiles: File[]) => {
   addFiles(newFiles)
@@ -23,15 +22,14 @@ const handleClearFiles = () => {
   clearFiles()
 }
 
-const handleAddMoreFiles = () => {
-  // Trigger click no input file do DropZone
-  const input = dropZoneRef.value?.$el?.querySelector('input[type="file"]') as HTMLInputElement
-  input?.click()
-}
 
 const handleSubmit = async () => {
   await submitFiles(files.value)
 }
+
+watchEffect(() => {
+  console.log(files.value)
+})
 </script>
 
 <template>
@@ -50,7 +48,7 @@ const handleSubmit = async () => {
       <!-- Upload card -->
       <div class="glass-card rounded-2xl p-8">
         <!-- Drop zone -->
-        <DropZone ref="dropZoneRef" @files-added="handleFilesAdded" />
+        <DropZone v-if="files.length <= 0" @files-added="handleFilesAdded"/>
 
         <!-- File list -->
         <FileList
@@ -66,7 +64,7 @@ const handleSubmit = async () => {
             :loading="isSubmitting"
             @submit="handleSubmit"
           />
-          <AddFilesButton @click="handleAddMoreFiles" />
+          <AddFilesButton @files-added="handleFilesAdded" />
         </div>
       </div>
     </div>
