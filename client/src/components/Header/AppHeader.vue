@@ -25,7 +25,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
       <!-- Logo -->
       <div class="flex items-center gap-2.5 cursor-pointer" @click="scrollTo('hero')">
         <div class="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/30 flex items-center justify-center">
-          <img src="../../../../public/logo.png" alt="Logo SumNFE" class="w-6 h-6">
+          <img src="../../../public/logo.png" alt="Logo SumNFE" class="w-6 h-6">
         </div>
         <span class="text-lg font-semibold tracking-tight">
           <span class="text-white">Sum</span><span class="text-blue-400">NFE</span>
