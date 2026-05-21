@@ -25,14 +25,6 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
       <!-- Logo -->
       <div class="flex items-center gap-2.5 cursor-pointer" @click="scrollTo('hero')">
         <div class="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/30 flex items-center justify-center">
-          <!-- <svg class="w-4.5 h-4.5 text-blue-400" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
-            <rect x="2" y="2" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
-            <rect x="5" y="5" width="4" height="2" rx="0.5" fill="currentColor"/>
-            <rect x="11" y="5" width="4" height="2" rx="0.5" fill="currentColor"/>
-            <rect x="5" y="9" width="4" height="2" rx="0.5" fill="currentColor"/>
-            <rect x="11" y="9" width="4" height="2" rx="0.5" fill="currentColor"/>
-            <rect x="5" y="13" width="10" height="2" rx="0.5" fill="currentColor"/>
-          </svg> -->
           <img src="../../../../public/logo.png" alt="Logo SumNFE" class="w-6 h-6">
         </div>
         <span class="text-lg font-semibold tracking-tight">
