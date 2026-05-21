@@ -10,7 +10,8 @@ app.add_middleware(SecurityMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173"
+        "http://localhost:5173",
+        "https://sumnfe.vercel.app/"
     ],
     allow_credentials=True,
     allow_methods=["*"],
