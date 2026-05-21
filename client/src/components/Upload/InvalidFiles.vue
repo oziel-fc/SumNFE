@@ -1,13 +1,13 @@
 <script setup lang='ts'>
     defineProps<{
-        invalidFiles: string[]
+        invalidFiles: string
         quantityFiles: number
     }>()
 </script>
 
 
 <template>
-  <!-- Componente Lista de Arquivos Inválidos (HTML Puro + Tailwind CSS) -->
+  <!-- Invalid Files -->
    <div class="w-full h-fit mt-8" >
         <div class="w-full flex flex-col gap-3">
             <div class="flex items-center gap-2 mb-3.5 text-xs font-bold uppercase tracking-wider">

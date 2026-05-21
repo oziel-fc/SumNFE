@@ -87,8 +87,9 @@ watchEffect(() => {
         />
         <InvalidFiles
           v-if="responseData?.invalid_files && responseData?.invalid_files.length > 0"
-          :invalid-files="responseData?.invalid_files"
-          :quantity-files="0"
+          v-for="file in responseData.invalid_files"
+          :invalid-files="file"
+          :quantity-files="responseData.invalid_files.length"
         />
       </div>
     </div>

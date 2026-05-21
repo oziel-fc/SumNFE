@@ -28,7 +28,7 @@
         <!-- Social links -->
         <div class="flex items-center gap-3">
           <a
-            href="https://github.com"
+            href="https://github.com/oziel-fc/SumNFE"
             target="_blank"
             rel="noopener noreferrer"
             class="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 hover:border-blue-500/40 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
@@ -39,7 +39,7 @@
             </svg>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/oziel-felipe/"
             target="_blank"
             rel="noopener noreferrer"
             class="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 hover:border-blue-500/40 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"

@@ -9,7 +9,7 @@
 
 
 <template>
-  <!-- Componente SumNFE Valor Total (HTML Puro + Tailwind CSS) -->
+  <!-- SumNFE Total Value -->
   <div class="w-full h-fit mt-8">
     <div class="bg-[#0b1326] border border-[#1e293b] rounded-xl p-6 w-full">
       <div class="flex flex-col gap-3">
@@ -20,12 +20,12 @@
           VALOR TOTAL
         </span>
 
-        <!-- Valor de Destaque -->
+        <!-- Total Value -->
         <h2 class="text-4xl font-extrabold tracking-tight text-white font-sans">
           <span class="text-[#2563eb]">R$</span> {{ formatBRL(totalValue) }}
         </h2>
 
-        <!-- Legenda de Notas -->
+        <!-- Quantity of Files -->
          
         <div class="flex items-center gap-1.5 pt-1 border-t border-white/5">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-emerald-500 opacity-80" aria-hidden="true">
