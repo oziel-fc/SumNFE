@@ -1,4 +1,6 @@
-fastapi
-uvicorn[standard]
-pdfplumber
-python-multipart
+fastapi==0.136.1
+uvicorn[standard]==0.47.0
+pdfplumber==0.11.9
+python-multipart==0.0.29
+python-dotenv==1.2.2
+defusedxml==0.7.1
