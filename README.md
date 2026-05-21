@@ -1,11 +1,11 @@
 <div align="center">
-    <img align="left" width="40" height="40" src="https://raw.githubusercontent.com/oziel-fc/SumNFE/refs/heads/main/client/public/logo.png">
+    <img align="left" width="40" height="40" src="https://github.com/oziel-fc/SumNFE/blob/main/client/public/logo.png">
      <h1 align="left">SumNFE</h1>  
   </br>
 </div>
 
 
-**SumNFE** é uma ferramenta rápida e intuitiva para upload e processamento de arquivos de NF-e (XML e PDF), realizando a extração e soma dos valores das notas fiscais automaticamente em segundos.
+**SumNFE** é uma ferramenta rápida e intuitiva para upload e processamento de arquivos de NF-e (`XML` e `PDF`), realizando a extração e soma dos valores das notas fiscais automaticamente em segundos.
 
 Com uma interface moderna e simples, o usuário pode enviar múltiplos arquivos e obter o valor total calculado de forma instantânea, sem necessidade de conferência manual.
 
