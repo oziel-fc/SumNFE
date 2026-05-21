@@ -1,5 +1,10 @@
 import { ref } from 'vue'
 import { uploadFiles } from '../utils/uploadFiles'
+import { useResponseData } from '../utils/useResponseData'
+
+const { responseData, setResponseData } = useResponseData()
+
+
 
 export function useFileSubmit() {
   const isSubmitting = ref(false)
@@ -12,6 +17,8 @@ export function useFileSubmit() {
     try {
       const response = await uploadFiles(files)
 
+      setResponseData(response)
+      
       console.log('Resposta da API:', response)
 
       return response
